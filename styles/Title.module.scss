@@ -1,0 +1,41 @@
+.main_title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding: 30vh 0 10vh 0;
+
+    .logo {
+        display: inline-flex;
+        justify-content: center;
+        padding-bottom: 16px;
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    }
+
+    .top_title {
+        display: inline-flex;
+        justify-content: center;
+
+        span {
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+    }
+
+    .title {
+        display: inline-flex;
+        justify-content: center;
+
+        span {
+            font-size: 7rem;
+            font-weight: 600;
+            letter-spacing: 4px;
+        }
+    }
+}

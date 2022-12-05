@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "title": "Portfolio",
+    "author": "UnknownMonke"
+  },
+  "socials": [
+    {
+      "name": "Github",
+      "iconSrc": "/icons/github.svg",
+      "alt": "git"
+    },
+    {
+      "name": "Linkedin",
+      "iconSrc": "/icons/linkedin.svg",
+      "alt": "linkedin"
+    },
+    {
+      "name": "About",
+      "iconSrc": "/icons/question_mark.svg",
+      "alt": "about"
+    }
+  ],
+  "projects": {
+    "title": "Projects",
+    "content": [
+      {
+        "title": "Portfolio Tools",
+        "desc": "Tools for analysis of the diversification of financial portfolios.",
+        "iconSrc": "/images/portfolio_tools.jpg",
+        "alt": "portfolio_tools"
+      },
+      {
+        "title": "Audio App",
+        "desc": "Audio player to read musics.",
+        "iconSrc": "/images/music.png",
+        "alt": "music"
+      },
+      {
+        "title": "Maze Generator",
+        "desc": "Maze generation and pathfinding.",
+        "iconSrc": "/images/maze.jpg",
+        "alt": "maze"
+      },
+      {
+        "title": "Pathfinding",
+        "desc": "Visual illustration of pathfinding algorithms.",
+        "iconSrc": "/images/pathfinding.png",
+        "alt": "pathfinding"
+      }
+    ]
+  } 
+}

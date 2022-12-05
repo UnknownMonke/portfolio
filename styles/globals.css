@@ -1,26 +1,32 @@
-html,
+html {
+    font-family: 'Segoe UI', sans-serif;
+
+    --text-color: #ffff;
+    --star-color: #ffff;
+    --bg: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(150,63,0,1) 100%);
+
+    --social-bg: #0d1117;
+    --social-border: #21262d;
+    --social-hover: #27303c;
+    --social-active: #444f5e;
+
+    --about-bg: linear-gradient(110deg, rgba(83,0,0,1) 0%, rgba(58,7,88,1) 100%);
+    --about-hover: linear-gradient(110deg, rgba(156,13,13,1) 0%, rgba(91,15,136,1) 100%);
+    --about-active: linear-gradient(110deg, rgba(210,22,22,1) 0%, rgba(144,29,213,1) 100%);
+
+    --proj-bg: #0d1117;
+    --proj-border: #21262d;
+
+    --card-bg: #161b22;
+    --card-border: #53515d;
+    --card-hover: #27303c;
+    --card-active: #444f5e;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+span {
+    color: var(--text-color);
 }

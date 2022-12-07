@@ -1,0 +1,119 @@
+.header {
+    display: inline-flex;
+    width: 100%;
+
+    .thumbnail {
+        margin: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .img_container {
+            position: relative;
+
+            img {
+                border-radius: 8px;
+            }
+        }
+    }
+
+    .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        padding: 0 12px;
+
+        .desc_title span {
+            font-weight: 600;
+        }
+
+        .desc_content {
+            padding-top: 4px;
+        }
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 16px;
+
+        .icon_container {
+            position: relative;
+
+            img {
+                opacity: 0.1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 430px)  {
+
+    .thumbnail .img_container {
+        width: 75px;
+        height: 75px;
+    }
+
+    .desc {
+        .desc_title span {
+            font-size: 1.25rem;
+        }
+
+        .desc_content span {
+            font-size: .975rem;
+        }
+    }
+
+    .icon .icon_container {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 600px) {
+
+    .thumbnail .img_container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .desc {
+        .desc_title span {
+            font-size: 1.25rem;
+        }
+
+        .desc_content span {
+            font-size: 1rem;
+        }
+    }
+
+    .icon .icon_container {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    .thumbnail .img_container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .desc {
+        .desc_title span {
+            font-size: 1.5rem;
+        }
+
+        .desc_content span {
+            font-size: 1rem;
+        }
+    }
+
+    .icon .icon_container {
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -1,5 +1,5 @@
-import { FunctionComponent } from "react"
-import Image from "next/image"
+import { FunctionComponent, useState } from "react"
+import ProjectHeader from "../components/project_header"
 
 import styles from "../styles/Project.module.scss"
 
@@ -9,27 +9,29 @@ type Props = {
     title: string,
     desc: string,
     iconSrc: string,
-    alt: string
+    alt: string,
+    details: string
 };
 
 /**
- * Component to display the list of projects.
+ * Component to display the project card with content dropdown.
+ * 
+ * ---
+ * 
+ * Details are injected without escaping via dangerouslySetInnerHTML to allow for easy formatting.
  */
 const Project: FunctionComponent<Props> = (props) => {
-    return (
-        <div className={styles.card}>
 
-            <div className={styles.thumbnail}>
-                <Image src={props.iconSrc} alt={props.alt} fill />
-            </div>
-            
-            <div className={styles.desc}>
-                <div className={styles.header}>
-                    <span>{props.title}</span>
-                </div>
-                <div className={styles.content}>
-                    <span>{props.desc}</span>
-                </div>
+    const [visible, setVisible] = useState(false); // Hook to control the display of details. 
+    const {title, desc, iconSrc, alt} = props;
+
+    return (
+        <div className={styles.card} onClick={() => setVisible(!visible)}>
+
+            <ProjectHeader visible={visible} {...{title, desc, iconSrc, alt}}></ProjectHeader>
+
+            <div className={`${styles.content} ${visible ? styles.visible : ''}`}>
+                <p dangerouslySetInnerHTML={{ __html: props.details }}></p>
             </div>
         </div>
     );

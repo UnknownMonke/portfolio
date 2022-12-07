@@ -25,28 +25,33 @@
     "content": [
       {
         "title": "Portfolio Tools",
-        "desc": "Tools for analysis of the diversification of financial portfolios.",
+        "desc": "Analysis of financial portfolios.",
         "iconSrc": "/images/portfolio_tools.jpg",
-        "alt": "portfolio_tools"
+        "alt": "portfolio_tools",
+        "details": "Tools to analyse the diversification of financial portfolios. \n \nThe portfolio is retreived from the broker via its specific API.\nAll equities are available for visualization, with quantity, amount and other metrics, \nand graphs show their geographic and sector distribution, according to stored preferences. \n \n<u>FrontEnd:</u> Angular 13, rxjs, PrimeNG \n<u>BackEnd:</u> Node Express \n<u>Database:</u> MongoDB"
       },
       {
         "title": "Audio App",
         "desc": "Audio player to read musics.",
         "iconSrc": "/images/music.png",
-        "alt": "music"
+        "alt": "music",
+        "details": "Audio player to play locally stored .mp3 and .wav files. \n \nMainly developped for mobile use with local songs. \n \nThe app provides several themes and a custom audio player with all usual functions (replay, next, volume...). \nThe app is also fully reactive and entirely developped with ngRx. \n \nThe mobile version is deployed with Apache Cordova. \n \n<u>FrontEnd:</u> Angular 13, ngRx \n<u>BackEnd:</u> none \n<u>Database:</u> none"
       },
       {
         "title": "Maze Generator",
         "desc": "Maze generation and pathfinding.",
         "iconSrc": "/images/maze.jpg",
-        "alt": "maze"
+        "alt": "maze",
+        "details": "Simple maze generator using commons generation algorithms such as Prim and Depth First Search. \n \nA pathfinding animation is provided using Breadth First Search. \nEverything is in vanilla JS and HTML."
       },
       {
         "title": "Pathfinding",
         "desc": "Visual illustration of pathfinding algorithms.",
         "iconSrc": "/images/pathfinding.png",
-        "alt": "pathfinding"
+        "alt": "pathfinding",
+        "details": "Simple JS and jQuery program to illustrate some pathfindings algorithms such as Dijikstra, BFS and A star. \n \nA simple grid offers the user the possibility to draw different terrains accounting for different weights, and witness the algorithm finding his way to the exit."
       }
     ]
-  } 
+  },
+  "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 }

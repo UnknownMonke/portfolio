@@ -11,8 +11,6 @@
         padding-bottom: 16px;
 
         img {
-            width: 200px;
-            height: 200px;
             border-radius: 50%;
         }
     }
@@ -22,7 +20,6 @@
         justify-content: center;
 
         span {
-            font-size: 2.5rem;
             font-weight: 600;
             letter-spacing: 2px;
         }
@@ -33,9 +30,56 @@
         justify-content: center;
 
         span {
-            font-size: 7rem;
             font-weight: 600;
             letter-spacing: 4px;
         }
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .main_title .logo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .top_title span {
+        font-size: 1.5rem;
+    }
+    
+    .title span {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 600px) {
+
+    .main_title .logo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .top_title span {
+        font-size: 2rem;
+    }
+    
+    .title span {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    .main_title .logo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .top_title span {
+        font-size: 2.5rem;
+    }
+    
+    .title span {
+        font-size: 7rem;
     }
 }

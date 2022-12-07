@@ -1,6 +1,6 @@
 .card {
-    display: inline-flex;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
     border-radius: 4px;
     border: 1px solid var(--card-border);
     background-color: var(--card-bg);
@@ -18,31 +18,50 @@
         background-color: var(--card-active);
     }
 
-    .thumbnail {
-        position: relative;
-        margin: 6px;
-        width: 100px;
-        height: 100px;
+    .content {
+        padding: 0 12px;
+        max-height: 0;
+        transition: all .3s ease-in-out;
+        overflow: hidden;
+        display: flex;
 
-        img {
-            border-radius: 8px;
+        @keyframes open {
+            from {
+              max-height: 0;
+            }
+            to {
+              max-height: 400px; 
+            }
+        }
+
+        &.visible {
+            max-height: 400px;
+        }
+
+        p {
+            white-space: pre-line;
+            width: 100%;
         }
     }
+}
 
-    .desc {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-grow: 1;
-        padding-left: 12px;
+@media screen and (max-width: 430px)  {
 
-        .header span {
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
+    .content p {
+        font-size: .9rem;
+    }
+}
 
-        .content {
-            padding-top: 4px;
-        }
+@media screen and (min-width: 430px) and (max-width: 600px) {
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    .content p {
+        font-size: 1rem;
     }
 }

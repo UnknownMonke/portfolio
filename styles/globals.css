@@ -21,12 +21,14 @@ html {
     --card-border: #53515d;
     --card-hover: #27303c;
     --card-active: #444f5e;
+
+    --bio-bg: linear-gradient(60deg, rgba(20,20,20,1) 0%, rgba(52,34,50,1) 57%, rgba(93,0,83,1) 100%);
 }
 
 body {
     margin: 0;
 }
 
-span {
+p, span {
     color: var(--text-color);
 }

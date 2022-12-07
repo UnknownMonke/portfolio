@@ -31,10 +31,12 @@ type Data = {
                 title: string,
                 desc: string,
                 iconSrc: string,
-                alt: string
+                alt: string,
+                details: string
             }
         ]
-    }
+    },
+    about: string
 };
 
 /**
@@ -86,6 +88,13 @@ const Home: FunctionComponent<Data> = (props) => {
                         {props.projects.content.map( (project, index) => (
                             <Project key={index} {...project}></Project>
                         ))}
+                    </div>
+                </div>
+
+                <div id={styles.about_container}>
+                    
+                    <div className={styles.bio}>
+                        <span>{props.about}</span>
                     </div>
                 </div>
             </div>
